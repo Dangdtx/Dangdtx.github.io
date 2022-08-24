@@ -1,1 +1,0 @@
-import{_ as a,o as t,c as d,a as e,b as r}from"../app.27a5da52.mjs";const c={},n=e("h1",{id:"readme-md",tabindex:"-1"},[e("a",{class:"header-anchor",href:"#readme-md","aria-hidden":"true"},"#"),r(" README.md")],-1),o=[n];function s(_,i){return t(),d("div",null,o)}const h=a(c,[["render",s],["__file","index.html.vue"]]);export{h as default};
