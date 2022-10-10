@@ -30,13 +30,10 @@
     }
   },
   "lint-staged": {
-    "**/*.js": [
-      "prettier --write",
-      "eslint"
-    ],
-    "**/*.vue": [
-      "prettier --write",
-      "eslint"
+    "*.{js,json,scss}": [
+      "prettier --config .prettierrc --write",
+      "eslint --fix",
+      "git add"
     ]
   },
   "config": {
