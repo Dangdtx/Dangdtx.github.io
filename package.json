@@ -4,6 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "commit": "git add . && git cz",
     "docs:dev": "vuepress dev docs",
     "docs:build": "vuepress build docs",
     "deploy": "bash deploy-gh.sh",
@@ -13,7 +14,9 @@
   "license": "ISC",
   "devDependencies": {
     "@commitlint/config-conventional": "^17.1.0",
+    "commitizen": "4.2.5",
     "commitlint": "^17.1.2",
+    "cz-customizable": "7.0.0",
     "husky": "^8.0.1",
     "vuepress": "^2.0.0-beta.50"
   },
@@ -21,5 +24,13 @@
     "hooks": {
       "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
     }
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-customizable"
+    }
+  },
+  "dependencies": {
+    "init": "0.1.2"
   }
 }
