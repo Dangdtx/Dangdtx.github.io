@@ -4,7 +4,7 @@ const sum = (a, b) => {
 let a = "b";
 let c = "c";
 let d = "d";
-let e = "ee";
+let e = "e";
 function direction(dir) {
   console.log(dir);
 }
