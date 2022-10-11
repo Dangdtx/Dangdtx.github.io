@@ -15,12 +15,14 @@
   "license": "ISC",
   "devDependencies": {
     "@commitlint/config-conventional": "^17.1.0",
-    "commitizen": "4.2.5",
+    "commitizen": "^4.2.5",
     "commitlint": "^17.1.2",
     "conventional-changelog-cli": "^2.2.2",
+    "cz-conventional-changelog": "^3.3.0",
     "cz-customizable": "7.0.0",
     "husky": "^8.0.1",
     "lint-staged": "^13.0.3",
+    "prettier": "^2.7.1",
     "vuepress": "^2.0.0-beta.50"
   },
   "husky": {
@@ -36,12 +38,12 @@
       "git add"
     ]
   },
-  "config": {
-    "commitizen": {
-      "path": "./node_modules/cz-customizable"
-    }
-  },
   "dependencies": {
     "init": "0.1.2"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
   }
 }
